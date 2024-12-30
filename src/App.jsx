@@ -1,9 +1,14 @@
-
+/*
+ * @copyrtight 2025 Manjur Al Jubayer
+ * License: Apache-2.0
+ * Email: sfmanjur21@gmail.com
+ */
+import Header from "./components/Header";
 
 const App = () => {
   return (
     <div>
-      <h1 className="text-4xl"> Root</h1>
+      <Header />
     </div>
   );
 };
