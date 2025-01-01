@@ -8,7 +8,7 @@ import { useState } from "react";
 import logo from "../assets/images/logo.svg";
 import Navbar from "./Navbar";
 const Header = () => {
-  const [navOpen, setNavOpen] = useState(false);
+  const [navOpen, setNavOpen] = useState(true);
 
   return (
     <header className="fixed top-0 left-0 w-full h-20 flex items-center z-40 bg-gradient-to-b from-zinc-900 to-zinc-900/0">
@@ -24,7 +24,10 @@ const Header = () => {
           </a>
         </h1>
         <div className="relative md:justify-self-center">
-          <button onClick={null} className="menu-btn md:hidden">
+          <button
+            onClick={() => setNavOpen((prevent) => !prevent)}
+            className="menu-btn md:hidden"
+          >
             <span className="material-symbols-rounded">menu</span>
           </button>
           <Navbar navOpen={navOpen} />
