@@ -4,8 +4,8 @@
  * Email: sfmanjur21@gmail.com
  */
 
-import avatar1 from "../assets/images/avatar-1.jpg";
-import heroBanner from "../assets/images/hero-banner.png";
+import avatar1 from "../assets/images/jubu.jpeg";
+import heroBanner from "../assets/images/Manjur.png";
 const Hero = () => {
   return (
     <section id="home" className="pt-28 lg:pt-36">
@@ -29,14 +29,16 @@ const Hero = () => {
               Available for work
             </div>
           </div>
-          <h2 className="headline-1">
+          <h2 className="headline-1 max-w-[15ch] sm:max-w-[20ch] lg:max-w-[15ch] mt-5 mb-8 lg:mb-10 ">
             Developing Next-Generation Scalable Websites.
           </h2>
-          <div className="">buttonPrimary buttonOutline</div>
+          <div className="flex items-center gap-3 ">
+            buttonPrimary buttonOutline
+          </div>
         </div>
 
-        <div className="">
-          <figure className="">
+        <div className="hidden lg:block">
+          <figure className="w-full max-w-[480px ml-auto  bg-gradient-to-t from-green-400 via-25% via-green-400/50 to-65% rounded-[60px] overflow-hidden">
             <img
               src={heroBanner}
               alt="Manjur al jubayer"
