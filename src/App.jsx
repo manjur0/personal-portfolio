@@ -3,7 +3,7 @@
  * License: Apache-2.0
  * Email: sfmanjur21@gmail.com
  */
-import Header from "./components/Header";
+import Header from "./Components/Header";
 import Hero from "./Components/Hero";
 
 const App = () => {

@@ -37,14 +37,14 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="hidden lg:block">
+        <div className="  w-full h-[480px] lg:h-[600px] ">
           <figure className="w-full max-w-[480px ml-auto  bg-gradient-to-t from-green-400 via-25% via-green-400/50 to-65% rounded-[60px] overflow-hidden">
             <img
               src={heroBanner}
               alt="Manjur al jubayer"
               width={656}
               height={800}
-              className="w-full"
+              className=" w-full h-full object-cover md:object-contain lg:object-cover "
             />
           </figure>
         </div>
