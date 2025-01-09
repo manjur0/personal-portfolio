@@ -4,8 +4,11 @@
  * Email: sfmanjur21@gmail.com
  */
 
+import { FiDownload } from "react-icons/fi";
+
 import avatar1 from "../assets/images/jubu.jpeg";
 import heroBanner from "../assets/images/Manjur.png";
+import { ButtonPrimary } from "./Button";
 const Hero = () => {
   return (
     <section id="home" className="pt-28 lg:pt-36">
@@ -33,7 +36,8 @@ const Hero = () => {
             Developing Next-Generation Scalable Websites.
           </h2>
           <div className="flex items-center gap-3 ">
-            buttonPrimary buttonOutline
+            <ButtonPrimary label={"Download CV"} icon={<FiDownload />} />{" "}
+            ButtonOutLine
           </div>
         </div>
 

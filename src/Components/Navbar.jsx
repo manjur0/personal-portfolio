@@ -20,8 +20,9 @@ const Navbar = ({ navOpen }) => {
     activeBox.current.style.width = lastActiveLink.current.offsetWidth + "px";
     activeBox.current.style.height = lastActiveLink.current.offsetHeight + "px";
   };
-  // Use effect
+  // Use effect to call initActiveBox function on component mount and window resize
   useEffect(initActiveBox, []);
+
   window.addEventListener("resize", initActiveBox);
 
   // active current link function
@@ -29,7 +30,6 @@ const Navbar = ({ navOpen }) => {
     lastActiveLink.current?.classList.remove("active");
     e.target.classList.add("active");
     lastActiveLink.current = e.target;
-
     initActiveBox();
   };
 
@@ -81,10 +81,9 @@ const Navbar = ({ navOpen }) => {
   );
 };
 
-
 // prop types validation
 Navbar.propTypes = {
   navOpen: PropTypes.bool.isRequired,
-}; 
+};
 
 export default Navbar;
