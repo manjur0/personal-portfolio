@@ -35,6 +35,10 @@ body {
   @apply w-full h-full object-cover;
 }
 
+.section {
+  @apply pt-20  lg:pt-32;
+}
+
 /* Nenu btn */
 .menu-btn {
   @apply w-10 h-10 grid place-items-center bg-zinc-50/10 rounded-xl ring-1 ring-zinc-50/[0.02] backdrop-blur-2xl hover:bg-zinc-50/15 transition-[transform,background-color] active:scale-95;
@@ -66,12 +70,15 @@ body {
 }
 
 .btn-secondary {
-  @apply bg-gradient-to-l from-green-400 via-20% via-green-400/50 to-80% text-zinc-100 active:bg-green-400;
+  @apply bg-gradient-to-l from-green-400 via-20% via-green-400/50 to-80% text-zinc-100 active:bg-green-400 hover:bg-green-900;
 }
 .btn {
   @apply text-[18px];
 }
 
 .btn:has(.material-symbols-rounded) {
-  @apply text-[18px] pr-3 bg-gradient-to-r from-green-400 via-20% via-green-400/50 to-80%;
+  @apply text-[18px] pr-3 bg-gradient-to-r from-green-400 via-20% via-green-400/50 to-80% active:bg-green-400 hover:bg-green-900;
+}
+.btn-outline:has(.material-symbols-rounded) {
+  @apply text-[18px] pr-3 bg-gradient-to-l from-green-400 via-20% via-green-400/50 to-80% active:bg-green-400 hover:bg-green-900;
 }

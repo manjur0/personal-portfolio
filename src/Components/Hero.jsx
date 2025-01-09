@@ -5,10 +5,11 @@
  */
 
 import { FiDownload } from "react-icons/fi";
+import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 
 import avatar1 from "../assets/images/jubu.jpeg";
 import heroBanner from "../assets/images/Manjur.png";
-import { ButtonPrimary } from "./Button";
+import { ButtonOutline, ButtonPrimary } from "./Button";
 const Hero = () => {
   return (
     <section id="home" className="pt-28 lg:pt-36">
@@ -37,12 +38,16 @@ const Hero = () => {
           </h2>
           <div className="flex items-center gap-3 ">
             <ButtonPrimary label={"Download CV"} icon={<FiDownload />} />{" "}
-            ButtonOutLine
+            <ButtonOutline
+              href={"#about"}
+              label={"Scroll down"}
+              icon={<MdOutlineKeyboardDoubleArrowDown />}
+            />
           </div>
         </div>
 
         <div className="  w-full h-[480px] lg:h-[600px] ">
-          <figure className="w-full max-w-[480px ml-auto  bg-gradient-to-t from-green-400 via-25% via-green-400/50 to-65% rounded-[60px] overflow-hidden">
+          <figure className="  w-full max-w-[480px ml-auto  bg-gradient-to-t from-green-400 via-25% via-green-400/50 to-65% rounded-[50px] overflow-hidden">
             <img
               src={heroBanner}
               alt="Manjur al jubayer"

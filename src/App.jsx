@@ -3,6 +3,7 @@
  * License: Apache-2.0
  * Email: sfmanjur21@gmail.com
  */
+import About from "./Components/About";
 import Header from "./Components/Header";
 import Hero from "./Components/Hero";
 
@@ -12,6 +13,7 @@ const App = () => {
       <Header />
       <main>
         <Hero />
+        <About />
       </main>
     </div>
   );
