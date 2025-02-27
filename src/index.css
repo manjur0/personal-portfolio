@@ -8,6 +8,9 @@
 html {
   scroll-behavior: smooth;
 }
+.reveal-up{
+  @apply translate-y-20 opacity-0 ;
+}
 body {
   @apply bg-zinc-900 text-zinc-50;
 }
@@ -21,7 +24,7 @@ body {
   -webkit-text-fill-color: transparent;
 }
 .headline-1 {
-  @apply text-5xl font-semibold leading-tight lg:text-[55px] lg:leading-[1.15];
+  @apply text-4xl font-semibold leading-tight lg:text-[55px] lg:leading-[1.15];
 }
 /* headline 2 css */
 .headline-2 {

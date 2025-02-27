@@ -83,7 +83,7 @@ const Contact = () => {
     <section id="contact" className="section">
       <div className="container lg:grid lg:grid-cols-2 lg:items-stretch">
         <div className="mb-12 lg:mb-0 lg:flex lg:flex-col">
-          <h2 className="headline-2 lg:max-w-[12ch] ">
+          <h2 className="headline-2 lg:max-w-[12ch] reveal-up ">
             Contact me for collaboration
           </h2>
 
@@ -97,11 +97,11 @@ const Contact = () => {
                 key={key}
                 href={href}
                 target="_blank"
-                className="w-12 h-12 grid place-items-center ring-inset ring-zinc-50/5 rounded-lg transition-[background-color,color] hover:bg-zinc-50 hover:text-zinc-950 active:bg-zin50/80"
+                className="w-12 h-12 grid place-items-center ring-inset ring-zinc-50/5 rounded-lg transition-[background-color,color] hover:bg-zinc-50 hover:text-zinc-950 active:bg-zin50/80 reveal-up"
               >
                 {icon}
               </a>
-            ))} 
+            ))}
           </div>
         </div>
         <form
@@ -111,7 +111,7 @@ const Contact = () => {
         >
           <div className="md:grid md:items-center md:grid-cols-2 md:gap-2">
             <div className="mb-4">
-              <label htmlFor="name" className="label">
+              <label htmlFor="name" className="label reveal-up">
                 Name
               </label>
               <input
@@ -121,11 +121,11 @@ const Contact = () => {
                 autoComplete="name"
                 required
                 placeholder="Enter Your Name "
-                className="text-field"
+                className="text-field reveal-up"
               />
             </div>
             <div className="mb-4">
-              <label htmlFor="name" className="label">
+              <label htmlFor="name" className="label reveal-up">
                 Email
               </label>
               <input
@@ -135,12 +135,12 @@ const Contact = () => {
                 autoComplete="email"
                 required
                 placeholder="Enter Your Email"
-                className="text-field"
+                className="text-field reveal-up"
               />
             </div>
           </div>
           <div className="mb-4">
-            <label htmlFor="message" className="label">
+            <label htmlFor="message" className="label reveal-up">
               Message
             </label>
             <textarea
@@ -150,12 +150,12 @@ const Contact = () => {
               rows={5}
               cols={6}
               required
-              className="text-field mb-5 resize-y min-h-32 max-h-80"
+              className="text-field mb-5 resize-y min-h-32 max-h-80 reveal-up"
             ></textarea>
           </div>
           <button
             type="submit"
-            className="btn btn-third [&]:max-w-full w-full justify-center "
+            className="btn btn-third [&]:max-w-full w-full justify-center reveal-up"
           >
             Submit
           </button>
