@@ -11,23 +11,26 @@ ratings.fill({
   icon: <IoMdStar />,
   style: {
     fontVariationSettings: '"FILL" 1',
-    color: "#ffc107",
   },
 });
 console.log(ratings);
 const ReviewCard = ({ content, name, imgSrc, company }) => {
   return (
     <div className="bg-zinc-800 p-5 rounded-xl min-w-[320px] flex flex-col lg:min-w-[420px]">
-      <div className="flex">
+      <div className="flex items-center gap-1 mb-3">
         {ratings.map(({ icon, style }, key) => (
-          <span key={key} style={style} className="font-bold">
+          <span
+            key={key}
+            style={style}
+            className="font-bold text-yellow-300 text-xl"
+          >
             {icon}
           </span>
         ))}
       </div>
-      <p className="">{content}</p>
-      <div className="">
-        <figure className="">
+      <p className="text-zinc-400 mb-8">{content}</p>
+      <div className="flex items-center gap-2 mt-auto ">
+        <figure className="img-box rounded-lg">
           <img
             src={imgSrc}
             alt={name}
@@ -39,7 +42,7 @@ const ReviewCard = ({ content, name, imgSrc, company }) => {
         </figure>
         <div className="">
           <p>{name}</p>
-          <p className="">{company}</p>
+          <p className="text-xs text-zinc-400 tracking-wider">{company}</p>
         </div>
       </div>
     </div>

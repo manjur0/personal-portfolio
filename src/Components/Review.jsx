@@ -53,10 +53,10 @@ const reviews = [
 
 const Review = () => {
   return (
-    <section id="reviews" className="section">
+    <section id="reviews" className="section overflow-hidden">
       <div className="container">
-        <h2 className="headline-2">What our customers say</h2>
-        <div className="">
+        <h2 className="headline-2 mb-8">What our customers say</h2>
+        <div className="flex gap-3 items-stretch w-fit">
           {reviews.map(({ content, name, imgSrc, company }, key) => (
             <ReviewCard
               key={key}
