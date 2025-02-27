@@ -3,28 +3,7 @@
  * License: Apache-2.0
  * Email: sfmanjur21@gmail.com
  */
-// const socials = [
-//   {
-//     label: "GitHub",
-//     href: "https://www.github.com/manjur0",
-//   },
-//   {
-//     label: "LinkedIn",
-//     href: "https://www.linkedin.com/in/manjur00",
-//   },
-//   {
-//     label: "Twitter X",
-//     href: "https://x.com/manjur00",
-//   },
-//   {
-//     label: "Instagram",
-//     href: "https://www.instagram.com/manjur.me",
-//   },
-//   {
-//     label: "Facebook",
-//     href: "https://wwww.facebook.com/manjur.me",
-//   },
-// ];
+
 const socialLinks = [
   {
     href: "https://www.github.com/manjur0",
@@ -122,7 +101,7 @@ const Contact = () => {
               >
                 {icon}
               </a>
-            ))}
+            ))} 
           </div>
         </div>
         <form
