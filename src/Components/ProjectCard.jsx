@@ -31,12 +31,12 @@ const ProjectCard = ({ imgSrc, title, tags, projectLink, classes }) => {
             ))}
           </div>
         </div>
-        <div className="w-11 h-11 rounded-lg grid place-items-center bg-green-400 text-zinc-950 shrink-0">
+        <div className=" w-11 h-11 rounded-lg grid place-items-center bg-green-400 text-zinc-950 shrink-0 cursor-pointer">
           <a
             href={projectLink}
             target="_blank"
             rel="noreferrer"
-            className="w-full h-full grid place-items-center hover:scale-125 transition-transform duration-100"
+            className=" w-full h-full grid place-items-center hover:scale-125 transition-transform duration-100"
           >
             <MdArrowOutward className="text-xl" />
           </a>
