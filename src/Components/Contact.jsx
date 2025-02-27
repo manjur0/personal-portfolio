@@ -102,23 +102,36 @@ const socialLinks = [
 const Contact = () => {
   return (
     <section id="contact" className="section">
-      <div className="container">
-        <h2 className="headline-2">Contact me for collaboration</h2>
+      <div className="container lg:grid lg:grid-cols-2 lg:items-stretch">
+        <div className="mb-12 lg:mb-0 lg:flex lg:flex-col">
+          <h2 className="headline-2 lg:max-w-[12ch] ">
+            Contact me for collaboration
+          </h2>
 
-        <p className="">
-          Reach out today to discuss your project needs and start collaborating
-          on something amazing!
-        </p>
-        <div className="">
-          {socialLinks.map(({ href, icon }, key) => (
-            <a key={key} href={href} target="_blank" className="">
-              {icon}
-            </a>
-          ))}
+          <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch] lg:max-w-[30ch]">
+            Reach out today to discuss your project needs and start
+            collaborating on something amazing!
+          </p>
+          <div className="flex items-center gap-2 mt-auto ">
+            {socialLinks.map(({ href, icon }, key) => (
+              <a
+                key={key}
+                href={href}
+                target="_blank"
+                className="w-12 h-12 grid place-items-center ring-inset ring-zinc-50/5 rounded-lg transition-[background-color,color] hover:bg-zinc-50 hover:text-zinc-950 active:bg-zin50/80"
+              >
+                {icon}
+              </a>
+            ))}
+          </div>
         </div>
-        <form action="" method="POST" className="">
-          <div className="">
-            <div className="">
+        <form
+          action="https://getform.io/f/bmdkmrra"
+          method="POST"
+          className="xl:pl-10 2xl:pl-20"
+        >
+          <div className="md:grid md:items-center md:grid-cols-2 md:gap-2">
+            <div className="mb-4">
               <label htmlFor="name" className="label">
                 Name
               </label>
@@ -128,11 +141,11 @@ const Contact = () => {
                 id="name"
                 autoComplete="name"
                 required
-                placeholder="Manjur "
+                placeholder="Enter Your Name "
                 className="text-field"
               />
             </div>
-            <div className="">
+            <div className="mb-4">
               <label htmlFor="name" className="label">
                 Email
               </label>
@@ -142,24 +155,29 @@ const Contact = () => {
                 id="email"
                 autoComplete="email"
                 required
-                placeholder="Manjur@example.com"
+                placeholder="Enter Your Email"
                 className="text-field"
               />
             </div>
           </div>
-          <div className="">
+          <div className="mb-4">
             <label htmlFor="message" className="label">
               Message
             </label>
             <textarea
               name="message"
               id="message"
-              placeholder="Hi"
+              placeholder="Enter Your Message"
+              rows={5}
+              cols={6}
               required
-              className="text-field"
+              className="text-field mb-5 resize-y min-h-32 max-h-80"
             ></textarea>
           </div>
-          <button type="submit" className="btn btn-primary">
+          <button
+            type="submit"
+            className="btn btn-third [&]:max-w-full w-full justify-center "
+          >
             Submit
           </button>
         </form>

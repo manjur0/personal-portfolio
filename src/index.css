@@ -78,6 +78,9 @@ body {
   @apply max-w-max h-9 flex items-center gap-2 px-4 rounded-lg font-medium text-sm ring-1 ring-zinc-50/5 ring-inset transition-[background-color];
 }
 
+.btn-third {
+  @apply bg-gradient-to-l bg-green-500  text-zinc-100 active:bg-green-400 hover:bg-green-600;
+}
 .btn-secondary {
   @apply bg-gradient-to-l from-green-400 via-20% via-green-400/50 to-80% text-zinc-100 active:bg-green-400 hover:bg-green-900;
 }
@@ -90,4 +93,14 @@ body {
 }
 .btn-outline:has(.material-symbols-rounded) {
   @apply text-[18px] pr-3 bg-gradient-to-l from-green-400 via-20% via-green-400/50 to-80% active:bg-green-400 hover:bg-green-900;
+}
+
+.label {
+  @apply block text-zinc-200 text-sm font-normal mb-2;
+}
+.text-field {
+  @apply block outline-none w-full px-3 py-3 text-sm bg-zinc-800 rounded-xl ring-1 ring-inset ring-transparent transition-shadow hover:ring-zinc-50/5 focus:ring-green-400 focus:ring-2;
+}
+.text-field::placeholder {
+  @apply text-zinc-400;
 }
