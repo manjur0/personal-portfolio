@@ -4,7 +4,7 @@
  * Email: sfmanjur21@gmail.com
  */
 
-import RevewCard from "./RevewCard";
+import ReviewCard from "./ReviewCard";
 
 const reviews = [
   {
@@ -58,7 +58,7 @@ const Review = () => {
         <h2 className="headline-2">What our customers say</h2>
         <div className="">
           {reviews.map(({ content, name, imgSrc, company }, key) => (
-            <RevewCard
+            <ReviewCard
               key={key}
               content={content}
               name={name}
