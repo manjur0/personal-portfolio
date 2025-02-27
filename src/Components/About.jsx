@@ -9,11 +9,11 @@ import logo from "../assets/images/logo.svg";
 const aboutItems = [
   {
     label: "Project done",
-    number: 45,
+    number: "50+",
   },
   {
     label: "Years of experience",
-    number: 10,
+    number: "02+",
   },
 ];
 
