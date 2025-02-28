@@ -3,45 +3,55 @@
  * License: Apache-2.0
  * Email: sfmanjur21@gmail.com
  */
+// all the image imported
+import figma from "../assets/images/figma.svg";
+import css3 from "../assets/images/css3.svg";
+import javascript from "../assets/images/javascript.svg";
+import nodejs from "../assets/images/nodejs.svg";
+import expressjs from "../assets/images/expressjs.svg";
+import mongodb from "../assets/images/mongodb.svg";
+import react from "../assets/images/react.svg";
+import tailwindcss from "../assets/images/tailwindcss.svg";
+
 import SkillCard from "./SkillCard";
 const skillItem = [
   {
-    imgSrc: "/src/assets/images/figma.svg",
+    imgSrc: figma,
     label: "Figma",
     desc: "Design tool",
   },
   {
-    imgSrc: "/src/assets/images/css3.svg",
+    imgSrc: css3,
     label: "CSS",
     desc: "User Interface",
   },
   {
-    imgSrc: "/src/assets/images/javascript.svg",
+    imgSrc: javascript,
     label: "JavaScript",
     desc: "Interaction",
   },
   {
-    imgSrc: "/src/assets/images/nodejs.svg",
+    imgSrc: nodejs,
     label: "NodeJS",
     desc: "Web Server",
   },
   {
-    imgSrc: "/src/assets/images/expressjs.svg",
+    imgSrc: expressjs,
     label: "ExpressJS",
     desc: "Node Framework",
   },
   {
-    imgSrc: "/src/assets/images/mongodb.svg",
+    imgSrc: mongodb,
     label: "MongoDB",
     desc: "Database",
   },
   {
-    imgSrc: "/src/assets/images/react.svg",
+    imgSrc: react,
     label: "React",
     desc: "Framework",
   },
   {
-    imgSrc: "/src/assets/images/tailwindcss.svg",
+    imgSrc: tailwindcss,
     label: "TailwindCSS",
     desc: "User Interface",
   },
