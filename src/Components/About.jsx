@@ -23,7 +23,7 @@ const About = () => {
       <div className="container">
         <div className="bg-zinc-800/50 p-7 rounded-2xl md:p-12 reveal-up ">
           <p className="text-zinc-300 mb-4 md:mb-8 md:text-lg md:max-w[60ch] ">
-            Welcome! I'm Manjur, a passionate web developer specializing in
+            Welcome! I&apos;m Manjur, a passionate web developer specializing in
             crafting visually stunning and highly functional websites. With a
             keen eye for design and a strong technical foundation, I bring ideas
             to life—transforming visions into seamless digital experiences that
