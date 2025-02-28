@@ -5,6 +5,7 @@
  */
 import { ButtonPrimary } from "./Button";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import logo from "/src/assets/images/logo.svg";
 
 const sitemap = [
   {
@@ -109,7 +110,7 @@ const Footer = () => {
         <div className="flex items-center justify-between pt-10 mb-8  ">
           <a href="/" className="logo reveal-up">
             <img
-              src="/src/assets/images/logo.svg"
+              src={logo}
               width={40}
               height={40}
               alt="Logo"
