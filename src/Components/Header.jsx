@@ -8,7 +8,7 @@ import { FaXmark } from "react-icons/fa6";
 import { MdOutlineLocalPhone } from "react-icons/md";
 
 import { useState } from "react";
-import logo from "../assets/images/logo.svg";
+import logo from "../assets/images/logo.png";
 import Navbar from "./Navbar";
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);

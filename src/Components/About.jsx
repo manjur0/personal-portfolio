@@ -4,7 +4,7 @@
  * Email: sfmanjur21@gmail.com
  */
 
-import logo from "../assets/images/logo.svg";
+import logo from "../assets/images/logo.png";
 //  About Details
 const aboutItems = [
   {
@@ -47,7 +47,7 @@ const About = () => {
               alt="Logo"
               width={30}
               height={30}
-              className="ml-auto md:w-[40px]  md:h-[40px]"
+              className="ml-auto md:w-[40px]  md:h-[40px] rounded-full"
             />
           </div>
         </div>

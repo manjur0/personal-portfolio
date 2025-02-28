@@ -5,7 +5,7 @@
  */
 import { ButtonPrimary } from "./Button";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import logo from "/src/assets/images/logo.svg";
+import logo from "/src/assets/images/logo.png";
 
 const sitemap = [
   {
